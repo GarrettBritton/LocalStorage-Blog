@@ -1,0 +1,65 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.header {
+    padding: 10px 10px 0px 10px;
+    font-size: 25px;
+    border-bottom-style:solid;
+    border-bottom-width: 5px;
+    border-bottom-color: black;
+    text-align: center;
+}
+
+.what {
+    text-align: center;
+}
+
+input {
+    width: 75%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+input:hover {
+    border: 3px solid black;
+}
+
+.inputs {
+text-align: center;
+}
+
+.input {
+    padding: 20px;
+}
+
+#Content {
+    height: 200px;
+}
+
+.submitButton {
+    text-align: center;
+    padding: 30px;
+}
+
+button {
+    background-color: white;
+    border-radius: 40px black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 500px;
+
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+
+
+}

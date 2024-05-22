@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/form.css">
     <title>Module-4</title>
 </head>
 <div class="header">
@@ -10,13 +11,26 @@
 </div>
 <body>
     <div class="what"> 
-        <h2>What's on your mind</h2>
+        <h2>What's on your mind?</h2>
     </div>
-    <input type="text" id="username" placeholder="Enter Username" />
-    <input type="text" id="Title" placeholder="Enter title" />
-    <input type="text" id="Content" placeholder="Enter Content" />
+    <div class="inputs">
+        <div class="input">
+            <h3>Username</h3>
+            <input type="text" id="username" placeholder="Enter Username" />
+        </div>
+        <div class="input">
+            <h3>Title</h3>
+            <input type="text" id="Title" placeholder="Enter title" />
+        </div>
+        <div class="input">
+            <h3>Content</h3>
+            <input type="text" id="Content" placeholder="Enter Content" />
+        </div>
+    </div>
 
-    <Button id="Submit">Submit</Button>
+    <div class="submitButton">
+        <Button id="Submit">Submit</Button>
+    </div>
     
 </body>
 </html>

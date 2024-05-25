@@ -43,7 +43,7 @@ text-align: center;
     padding: 20px;
 }
 
-#Content {
+#content {
     height: 200px;
 }
 
@@ -66,7 +66,7 @@ text-align: center;
 
 }
 
-#Submit:hover {
+#submit:hover {
     background-color: black;
     color: white;
     transition-duration: 0.5s;
@@ -74,14 +74,18 @@ text-align: center;
 
 }
 
-/* Light mode styles */
 body {
     background-color: #ffffff;
     color: #000000;
 }
 
-/* Dark mode styles */
 body.dark-mode {
     background-color: #333333;
     color: #ffffff;
+}
+
+body.dark-mode .header {
+    border-bottom-style:solid;
+    border-bottom-width: 5px;
+    border-bottom-color: white;
 }

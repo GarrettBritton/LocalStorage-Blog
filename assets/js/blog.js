@@ -1,11 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
-    renderMessage();
+    renderPost();
 });
 
-function renderMessage() {
-    const lastPost = JSON.parse(localStorage.getItem('post'));
-    if (lastPost !== null) {
-        document.querySelector('.message').textContent = `${lastPost.user} posted: ${lastPost.title} - ${lastPost.content}`;
+function renderPost() {
+    const post = getData('post'); 
+    if (post !== null) {
+        const postContainer = document.getElementById('post-container');
+        postContainer.innerHTML = `
+            <h2>${post.title}</h2>
+            <p>Posted by ${post.user}</p>
+            <p>${post.content}</p>
+        `;
+    } else {
+        const postContainer = document.getElementById('post-container');
+        postContainer.innerHTML = '<p>No post found.</p>';
     }
 }
 

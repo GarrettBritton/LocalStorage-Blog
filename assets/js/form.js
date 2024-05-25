@@ -12,6 +12,7 @@ submit.addEventListener('click', function (event) {
         content: content.value.trim(),
     };
 
+    saveData('post', post);
     localStorage.setItem('post', JSON.stringify(post));
     window.location.href = 'blog.html';
 });
